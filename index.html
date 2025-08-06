@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>একক ও পরিমাপ | Study With Keshab</title>
+    <title>বল এবং গতি | Study With Keshab</title>
     
     <!-- প্রধান CSS ফাইল -->
     <link rel="stylesheet" href="css/style.css">
@@ -28,7 +28,7 @@
     <header class="main-header">
         <img src="images/logo.jpg" alt="লোগো" class="profile-pic" id="logo-easter-egg">
         <div class="header-text">
-            <h1>অধ্যায়: একক ও পরিমাপ</h1>
+            <h1>অধ্যায়: বল এবং গতি</h1>
             <p>আপনার পড়াশোনার সেরা ডিজিটাল সঙ্গী</p>
         </div>
         <button id="dark-mode-toggle" class="dark-mode-button" title="দিন/রাত মোড পরিবর্তন করুন">
@@ -51,9 +51,9 @@
     </nav>
 
     <main>
-        <!-- === এই লাইনটি নতুন যোগ করা হয়েছে === -->
+        <!-- === এই অধ্যায়ের নাম JS এর জন্য নির্দিষ্ট করা হয়েছে === -->
         <script>
-            const CURRENT_CHAPTER_NAME = "একক ও পরিমাপ";
+            const CURRENT_CHAPTER_NAME = "বল এবং গতি";
         </script>
         
         <!-- ইউজার প্রোফাইল কার্ড -->
@@ -80,17 +80,45 @@
 
         <!-- ক্লাস নোট সেকশন -->
 <section class="card" id="class-notes">
-    <h2><i class="fa-solid fa-book-open icon-title"></i> ক্লাস নোট</h2>
-    <p>লেকচারের সাথে মিলিয়ে পড়ার জন্য ক্লাস নোটগুলো পড়ুন।</p>
-    <div class="link-container">
-        <a href="class/class1.html">নোট ১</a>
-        <a href="class/class2.html">নোট ২</a>
-        <a href="class/class3.html">নোট ৩</a>
-        <a href="class/class4.html">নোট ৪</a>
-        <a href="class/class5.html">নোট ৫</a>
-        <a href="class/class6.html">নোট ৬</a>
-        <a href="class/class7.html">নোট ৭</a>
-        <a href="class/class8.html">নোট ৮</a>
+    <h2><i class="fa-solid fa-book-open icon-title"></i> Class Notes</h2>
+    <p>Read the class notes to follow along with the lectures.</p>
+    <div class="notes-grid-container">
+        <a href="class/class1.html" class="note-card">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Class Note 1</span>
+        </a>
+        <a href="class/class2.html" class="note-card">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Class Note 2</span>
+        </a>
+        <a href="class/class3.html" class="note-card">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Class Note 3</span>
+        </a>
+        <a href="class/class4.html" class="note-card">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Class Note 4</span>
+        </a>
+        <a href="class/class5.html" class="note-card">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Class Note 5</span>
+        </a>
+        <a href="class/class6.html" class="note-card">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Class Note 6</span>
+        </a>
+        <a href="class/class7.html" class="note-card">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Class Note 7</span>
+        </a>
+        <a href="class/class8.html" class="note-card">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Class Note 8</span>
+        </a>
+        <a href="class/class9.html" class="note-card">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Class Note 9</span>
+        </a>
     </div>
 </section>
         
@@ -112,7 +140,7 @@
             <p>গুরুত্বপূর্ণ বিষয়গুলো দ্রুত ঝালিয়ে নেওয়ার জন্য বিশেষ রিভিশন পেজগুলো দেখুন।</p>
             <div class="link-container">
                 <a href="revision_series/class1.html">📘 Class 1</a>
-                
+                <a href="revision_series/class2.html">📘 Class 2</a>
             </div>
         </section>
 
@@ -134,24 +162,40 @@
     <div id="formula-modal" class="modal-overlay">
         <div class="modal-content">
             <button class="modal-close-btn">&times;</button>
-            <h2>🌟 গুরুত্বপূর্ণ সূত্র ও ধারণা (একক ও পরিমাপ)</h2>
+            <h2>🌟 গুরুত্বপূর্ণ সূত্র ও ধারণা (বল এবং গতি)</h2>
             <ul>
-                <li>📏 **SI মৌলিক একক:** মিটার (m), কিলোগ্রাম (kg), সেকেন্ড (s), অ্যাম্পিয়ার (A), কেলভিন (K), মোল (mol), ক্যান্ডেলা (cd)।</li>
-                <li>⚙️ **মাত্রীয় সংকেত (Dimensional Formula):** 
+                <li>ന്യ **নিউটনের গতিসূত্র:**
                     <ul>
-                        <li>বেগ (Velocity): [LT⁻¹]</li>
-                        <li>ত্বরণ (Acceleration): [LT⁻²]</li>
-                        <li>বল (Force): [MLT⁻²]</li>
-                        <li>কাজ (Work): [ML²T⁻²]</li>
+                        <li>প্রথম সূত্র: বাহ্যিক বল প্রযুক্ত না হলে স্থির বস্তু স্থির এবং সচল বস্তু সমবেগে চলতে থাকে। (জাড্যের ধারণা)</li>
+                        <li>দ্বিতীয় সূত্র: বস্তুর ভরবেগের পরিবর্তনের হার প্রযুক্ত বলের সমানুপাতিক। (<b>F = ma</b>)</li>
+                        <li>তৃতীয় সূত্র: প্রত্যেক ক্রিয়ারই একটি সমান ও বিপরীত প্রতিক্রিয়া আছে।</li>
                     </ul>
                 </li>
-                <li>🧮 **পরিমাপের ত্রুটি (Measurement Error):**
+                <li>🚗 **রৈখিক গতির সমীকরণ (Equations of Motion):**
                     <ul>
-                        <li>শতাংশ ত্রুটি = (চূড়ান্ত ত্রুটি / গড় মান) × ১০০%</li>
+                        <li>v = u + at</li>
+                        <li>s = ut + ½at²</li>
+                        <li>v² = u² + 2as</li>
                     </ul>
                 </li>
-                <li>📐 **ভার্নিয়ার ধ্রুবক (Vernier Constant):** VC = 1 MSD - 1 VSD</li>
-                <li>🔩 **স্ক্রু গেজের লঘিষ্ঠ অঙ্ক (Least Count):** LC = পিচ / বৃত্তাকার স্কেলের মোট ভাগ সংখ্যা</li>
+                <li>💨 **ভরবেগ (Momentum) ও বলের ঘাত (Impulse):**
+                    <ul>
+                        <li>ভরবেগ (p) = ভর (m) × বেগ (v)</li>
+                        <li>বলের ঘাত = বল (F) × সময় (t) = ভরবেগের পরিবর্তন (Δp)</li>
+                    </ul>
+                </li>
+                <li>🔄 **বৃত্তীয় গতি (Circular Motion):**
+                    <ul>
+                        <li>অভিকেন্দ্র ত্বরণ (a<sub>c</sub>) = v²/r</li>
+                        <li>অভিকেন্দ্র বল (F<sub>c</sub>) = mv²/r</li>
+                    </ul>
+                </li>
+                <li>📉 **ঘর্ষণ বল (Frictional Force):**
+                    <ul>
+                        <li>স্থিত ঘর্ষণ: f<sub>s</sub> ≤ μ<sub>s</sub>N</li>
+                        <li>চল ঘর্ষণ: f<sub>k</sub> = μ<sub>k</sub>N</li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
